@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Chris Vaughan</title>
+        <link rel="stylesheet" type="text/css" href="CSS/my_portfolio.css" >
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">Github</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="JELLYFISH">
+                <source src="Videos/Jellyfish - 10480.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Doing this for Kiya and Endi</h1>
+            <strong>
+                <p class="center">
+                    <q>Sucking at something is the first step towards being sorta good at something.
+
+                    </q>
+                    <br> -Jake the Dog
+                    <br>
+                    <br> My name is Inigo Montoya. You killed my father, prepare to die.
+                    <br>
+                    <br> Do it for them.
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="Images/family.JPG" alt="My world">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I started my journey in software development in 2012 and took a break when I decided to change my major to family mental health.
+                    10 years later and <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> has allowed me to finish that goal.
+                    <br>
+                    <br>As a graduate I have gained experience in HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I bring years of experience in customer service from the wedding industry, a thorough education and practice in mental health interventions,
+                    <br> and a continuing practice of patient care in a hospital where I provide medical imaging services. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    A collection of my projects can be viewed on my GitHub profile:
+                    <br>
+                    <p class="center"><a href="https://github.com/wcvaughan" target="_blank">Chris Vaughan GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/wcvaughan" target="_blank"><img src="Images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="Images/linkedin.jpeg" alt="Contact_image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute-->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">Chris Vaughan, Software Developer</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
